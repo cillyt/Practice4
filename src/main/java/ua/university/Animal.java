@@ -1,4 +1,4 @@
-package ua.univarsity;
+package ua.university;
 
 abstract class Animal {
     abstract void speak();

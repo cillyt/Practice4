@@ -1,4 +1,4 @@
-package ua.univarsity;
+package ua.university;
 
 public class Dog extends Animal {
     @Override

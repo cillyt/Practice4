@@ -1,4 +1,4 @@
-package ua.univarsity;
+package ua.university;
 
 class A {
     void process(Object obj){

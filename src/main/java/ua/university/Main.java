@@ -1,4 +1,4 @@
-package ua.univarsity;
+package ua.university;
 
 public class Main {
     public static void main(String[] args) {

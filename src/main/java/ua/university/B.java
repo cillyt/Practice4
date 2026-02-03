@@ -1,4 +1,4 @@
-package ua.univarsity;
+package ua.university;
 
 class B extends A{
     @Override
