@@ -1,17 +1,32 @@
 package ua.univarsity;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+        Animal[] animals = {dog, cat, dog};
+        for(Animal a : animals) {
+            a.speak();
         }
+
+        A a = new B();
+        a.process("hi");
+
+        Animal a1 = new Dog();
+        Animal b = new Cat();
+
+        if(a1 instanceof Dog) {a1.fetchStick();}
+        else{System.out.println("об'єкт не є собакою");}
+
+        if(b instanceof Dog) {b.fetchStick();}
+        else{System.out.println("об'єкт не є собакою");}
+
+        Animal a2 = new Dog();
+        Dog d = (Dog) a2;
+
+        //Animal a3 = new Cat();
+        //Dog d2 = (Dog) a3;  //тут ми запевняємо, що кіт є собакою -> ClassCastException
+
+
     }
 }

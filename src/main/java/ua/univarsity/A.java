@@ -1,4 +1,7 @@
 package ua.univarsity;
 
-public class A {
+class A {
+    void process(Object obj){
+        System.out.println("A:Object");
+    };
 }

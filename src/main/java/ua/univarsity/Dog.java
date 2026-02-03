@@ -1,4 +1,10 @@
 package ua.univarsity;
 
-public class Dog {
+public class Dog extends Animal {
+    @Override
+    public void speak() {
+        System.out.println("Woof");
+    }
+
+
 }
